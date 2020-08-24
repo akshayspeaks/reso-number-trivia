@@ -2,5 +2,5 @@ import 'package:number_trivia/features/number_trivia/data/models/number_trivia_m
 
 abstract class NumberTriviaRemoteDataSource {
   Future<NumberTriviaModel> getConcreteNumberTrivia(int number);
-  Future<NumberTriviaModel> getRandomNumberTrivia(int number);
+  Future<NumberTriviaModel> getRandomNumberTrivia();
 }
