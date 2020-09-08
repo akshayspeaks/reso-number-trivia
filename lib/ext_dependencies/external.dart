@@ -5,7 +5,8 @@ import 'package:http/http.dart' as http;
 
 @module
 abstract class RegisterModule {
-  @lazySingleton
+  @preResolve
+  @singleton
   Future<SharedPreferences> get prefs => SharedPreferences.getInstance();
 
   @lazySingleton
